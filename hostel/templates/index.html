@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Accommodation Allocation</title>
+</head>
+<body>
+    <h1>Upload Group and Hostel Information</h1>
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <label for="group_file">Upload Group Information CSV:</label>
+        <input type="file" name="group_file" id="group_file" required><br><br>
+        <label for="hostel_file">Upload Hostel Information CSV:</label>
+        <input type="file" name="hostel_file" id="hostel_file" required><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
